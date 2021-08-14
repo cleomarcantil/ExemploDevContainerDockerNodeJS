@@ -1,8 +1,14 @@
 {
 	"name": "ExemploDevContainerDockerNodeJS",
-	"build": {
-		"dockerfile": "Dockerfile",
-	},
+
+	"dockerComposeFile": [
+		// "../docker-compose.yml",
+		"docker-compose.yml"
+	],
+
+	"service": "nodedev",
+
+	"workspaceFolder": "/workspace",
 
 	// Set *default* container specific settings.json values on container create.
 	"settings": {},
